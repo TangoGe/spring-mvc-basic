@@ -6,6 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+/**
+ * 非注解方式需要实现Controller接口
+ * 
+ * @author Tango
+ *
+ */
 public class HelloController implements Controller {
 
 	@Override
@@ -17,7 +23,6 @@ public class HelloController implements Controller {
 		// 设置返回的视图路径
 		modelAndView.setViewName("/WEB-INF/jsp/welcome.jsp");
 		return modelAndView;
-
 	}
 
 }
